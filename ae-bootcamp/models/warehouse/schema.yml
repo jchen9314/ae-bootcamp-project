@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: dim_customer
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+  - name: dim_products
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+  - name: dim_date
+    columns:
+      - name: date_id
+        tests:
+          - not_null
+          - unique
+  - name: dim_employees
+    columns:
+      - name: employee_id
+        tests:
+          - not_null
+          - unique
+  - name: fact_inventory
+    columns:
+      - name: inventory_id
+        tests:
+          - not_null
+          - unique
